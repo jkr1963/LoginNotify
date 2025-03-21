@@ -18,7 +18,7 @@ brew install msmtp
 
 Create a config file (msmtprc) to hold the email configuration
 ```bash
-nano `/.msmtprc
+nano ~/.msmtprc
 
 ini
 defaults
@@ -28,5 +28,29 @@ tls_starttls      on
 tls_certcheck      off
 tls_trust_file      /opt/homebrew/etc/openssl@1.1/cert.pem
 logfile      ~/.msmtp.log
+
+account      gmail
+host        amtp.gmail.com
+port      587
+from       your_email@gmail.com
+user       your_email@gmail.com
+password   your_app_password
+```
+Note: You need to generate the uniue app password for your gmail account.
+
+Secure the config file:
+```bash
+chmod 600 ~/.msmtprc
+```
+
+Make the bash script executable:
+```bash
 chmod +x login_notify.sh
+```
+
+Run the script:
+```bash
 ./login_notify.sh
+```
+
+
