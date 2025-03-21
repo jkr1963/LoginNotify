@@ -39,7 +39,7 @@ from       your_email@gmail.com
 user       your_email@gmail.com
 password   your_app_password
 ```
-Note: You need to generate the uniue app password for your gmail account.
+Note: You need to generate the unique app password for your gmail account.
 
 Secure the config file:
 ```bash
