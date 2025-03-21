@@ -19,7 +19,10 @@ brew install msmtp
 Create a config file (msmtprc) to hold the email configuration
 ```bash
 nano ~/.msmtprc
+```
 
+Configuration file content:
+```bash
 ini
 defaults
 auth      on
